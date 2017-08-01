@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.didispace</groupId>
-    <artifactId>api-gateway-with-eureka</artifactId>
+    <artifactId>eureka-api-gateway</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>api-gateway-with-eureka</name>
+    <name>eureka-api-gateway</name>
     <description>Spring Cloud In Action</description>
 
     <parent>

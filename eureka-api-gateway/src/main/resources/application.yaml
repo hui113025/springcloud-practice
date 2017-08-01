@@ -11,10 +11,10 @@ zuul:
     api-a:
       path: /api-a/**
       serviceId: eureka-client
-  #  multi-instance
+#  multi-instance
     api-b:
       path: /api-b/**
-      serviceId: eureka-consumer-ribbon-hystrix
+      serviceId: eureka-ribbon-hystrix
 
 eureka:
   client:
