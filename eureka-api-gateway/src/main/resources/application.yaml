@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 1101
+
+zuul:
+  routes:
+#  multi-instance
+    api-a:
+      path: /api-a/**
+      serviceId: eureka-client
+  #  multi-instance
+    api-b:
+      path: /api-b/**
+      serviceId: eureka-consumer-ribbon-hystrix
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/

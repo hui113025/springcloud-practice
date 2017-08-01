@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      name: neo-config
+      uri: http://localhost:1201/
+      profile: dev
+      label: master
+      enabled: true
+    bus:
+      trace:
+        enabled: true
+
+server:
+  port: 2001
+
+rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/   ## 注册中心eurka地址
+
+management:
+  security:
+     enabled: false

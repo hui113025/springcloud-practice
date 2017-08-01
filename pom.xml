@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.didispace</groupId>
+    <artifactId>springcloud-practice</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <modules>
+
+        <module>eureka-api-gateway</module>
+        <module>config-client</module>
+        <module>config-server-git</module>
+        <module>eureka-client</module>
+        <module>hystrix-dashboard</module>
+        <module>turbine</module>
+        <module>turbine-amqp</module>
+        <module>eureka-ribbon-hystrix</module>
+        <module>eureka-server</module>
+        <module>eureka-bus-client</module>
+
+    </modules>
+
+</project>

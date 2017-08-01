@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hui113025/springcloud-practice/
+          search-paths: config-repo
+          username:
+          password:
+
+server:
+  port: 1201
+
+rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/   ## 注册中心eurka地址
+
+management:
+  security:
+     enabled: false
