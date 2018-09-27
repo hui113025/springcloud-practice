@@ -26,7 +26,21 @@
 - Spring cloud bus 消息总线 自动刷新配置获取最新值
     https://m.aliyun.com/yunqi/articles/100719
 
+##springcloud
+eureka-server：注册中心
+eureka-client：服务A
+eureka-ribbon-hystrix：负载均衡+熔断器
+eureka-api-gateway：网管，访问用
+eureka-server-> eureka-client-> eureka-ribbon-hystrix ->eureka-api-gateway
 
+##远程配置、自动刷新配置
+eureka-server：注册中心
+config-repo：远程仓库内容
+config-client：服务A，是可以从远程仓库获取数据的服务
+eureka-bus-client：服务A，config-client升级，自动刷新配置获取最新值
+config-server-git：spring.cloud.config.discovery.service-id：指定配置中心的service-id，便于扩展为高可用配置集群。
+config-repo -> config-client
+config-repo -> config-server-git -> eureka-bus-client
 #### **参考文档**
     MyBatis官方文档：http://www.mybatis.org/mybatis-3/zh/index.html
     程序猿DD博客：http://blog.didispace.com/Spring-Cloud基础教程/
